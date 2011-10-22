@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+begin; require 'turn'; rescue LoadError; rescue RuntimeError; end
 require_relative '../lib/fillertext'
 
 describe FillerText do
