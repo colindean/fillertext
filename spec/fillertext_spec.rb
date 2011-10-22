@@ -15,19 +15,16 @@ describe FillerText do
     it "should output words" do
       f = FillerText.words 5
       #look for four spaces
-      f.scan(/\s/).size.must_equal 5
       f.must_equal "Lorem ipsum dolor sit amet"
     end
     
     it "should output characters" do
       f = FillerText.characters 5    
-      f.length.must_equal 5
       f.must_equal "Lorem"
     end
     
     it "should output bytes" do
       f = FillerText.bytes 5
-      f.length.must_equal 5 
       f.must_equal "Lorem"
     end
     
@@ -50,19 +47,16 @@ describe FillerText do
     it "should output words" do
       f = 2.filler.words  
       #look for four spaces
-      f.scan(/\s/).size.must_equal 5
       f.must_equal "Lorem ipsum dolor sit amet"
     end
     
     it "should output characters" do
       f = 2.filler.characters 
-      f.length.must_equal 5
       f.must_equal "Lorem"  
     end
     
     it "should output bytes" do
       f = 2.filler.bytes  
-      f.length.must_equal 5
       f.must_equal "Lorem"
     end
     
