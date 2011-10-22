@@ -11,6 +11,8 @@ standard "lorem ipsum" text or a variety of other clever substitute texts.
 
 Installing FillerText
 ---------------------
+**NOTE:** *This isn't actually live on rubygems yet.*
+
 Install using:
 
     gem install fillertext
@@ -28,20 +30,22 @@ There are two main ways. One is cleaner because it keeps FillerText within its
 own namespace. The other method will add Integer#filler to keep some tasty
 syntactical sugar.
 
-    FillerText.sentences 5
-    FillerText.words 2
-    FillerText.characters 5
-    FillerText.bytes 4
-    FillerText.paragraphs 1
+    FillerText::FillerText.sentences 5
+    FillerText::FillerText.words 2
+    FillerText::FillerText.characters 5
+    FillerText::FillerText.bytes 4
+    FillerText::FillerText.paragraphs 1
+
+or the *much* easier and intended method:
 
     2.filler.sentences
     1.filler.paragraphs
 
 You can also change the style from the default "lorem ipsum" to something else.
 
-    FillerText.style = FillerText::LoremIpsum
-    FillerText.style = FillerText::HipsterIpsum
-    FillerText.style = FillerText::YinzerIpsum
+    FillerText::FillerText.style = FillerText::Style::LoremIpsum
+    FillerText::FillerText.style = FillerText::Style::HipsterIpsum
+    FillerText::FillerText.style = FillerText::Style::YinzerIpsum
 
 Contributing to FillerText
 --------------------------
