@@ -9,7 +9,7 @@ describe FillerText do
     it "should output sentences" do
       f = FillerText.sentences 5
       #look for the periods
-      f.scan(/\./).size.must_equal 5
+      f.scan(/\./).size.must_equal 4
     end
 
     it "should output words" do
@@ -31,7 +31,7 @@ describe FillerText do
     it "should output paragraphs" do
       f = FillerText.paragraphs 5
       #look for newlines
-      f.scan(/\n/).size.must_equal 5
+      f.scan(/\n/).size.must_equal 4
     end
   end
   
@@ -39,31 +39,31 @@ describe FillerText do
     include FillerText
 
     it "should output sentences" do
-      f = 2.filler.sentences 
+      f = 5.filler.sentences 
       #look for the periods
-      f.scan(/\./).size.must_equal 5  
+      f.scan(/\./).size.must_equal 4  
     end
 
     it "should output words" do
-      f = 2.filler.words  
+      f = 3.filler.words  
       #look for four spaces
-      f.must_equal "Lorem ipsum dolor sit amet"
+      f.must_equal "Lorem ipsum dolor"
     end
     
     it "should output characters" do
-      f = 2.filler.characters 
+      f = 5.filler.characters 
       f.must_equal "Lorem"  
     end
     
     it "should output bytes" do
-      f = 2.filler.bytes  
+      f = 5.filler.bytes  
       f.must_equal "Lorem"
     end
     
     it "should output paragraphs" do
-      f = 2.filler.paragraphs
+      f = 5.filler.paragraphs
       #look for newlines
-      f.scan(/\n/).size.must_equal 5  
+      f.scan(/\n/).size.must_equal 4 
     end
   end
   
