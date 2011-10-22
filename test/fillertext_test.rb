@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'fillertext'
+require_relative '../lib/fillertext'
 
 class FillerTextTest < MiniTest::Unit::TestCase
 
@@ -7,8 +7,7 @@ class FillerTextTest < MiniTest::Unit::TestCase
 
   end
 
-  test "should generate some text"
-
+  test "should generate some text" do
     FillerText.sentences 5
     FillerText.words 2
     FillerText.characters 5
