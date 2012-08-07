@@ -2,13 +2,29 @@ module FillerText
   #this has to be here because of file require order issues
   #todo: fix this
   module Style; class LoremIpsum; end; end
+
+  def self.paragraphs(n=nil)
+    FillerText.paragraphs n
+  end
+  def self.words(n=nil)
+    FillerText.words n
+  end
+  def self.bytes(n=nil)
+    FillerText.bytes n
+  end
+  def self.characters(n=nil)
+    FillerText.characters n
+  end
+  def self.sentences(n=nil)
+    FillerText.sentences n
+  end
   
   class FillerText
 
     @@style = Style::LoremIpsum
   
     def self.style=(style)
-      @@style
+      @@style = style
     end
 
     def self.style

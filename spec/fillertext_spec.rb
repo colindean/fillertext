@@ -70,20 +70,21 @@ describe FillerText do
   describe "when changing filler text style" do
     include FillerText
 
-    it "should use LoremIpsum by default" do
+    it "should use LoremIpsum" do
+      FillerText::FillerText.style = FillerText::Style::LoremIpsum
       t = "Lorem ipsum"
       t.length.filler.characters.must_equal t
     end
   
     it "should use hipster ipsum" do
-      FillerText.style = Style::HipsterIpsum
+      FillerText::FillerText.style = FillerText::Style::HipsterIpsum
       t = "Hipster ipsum"
       t.length.filler.characters.must_equal t
     end
     
     it "should use yinzer ipsum" do
       t = "Yinzer ipsum"
-      FillerText.style = Style::YinzerIpsum  
+      FillerText::FillerText.style = FillerText::Style::YinzerIpsum
       t.length.filler.characters.must_equal t
     end
 
