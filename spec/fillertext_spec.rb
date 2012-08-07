@@ -1,5 +1,7 @@
 require 'minitest/autorun'
 begin; require 'turn'; rescue LoadError; rescue RuntimeError; end
+require 'simplecov'
+SimpleCov.start if ENV['COVERAGE']
 require_relative '../lib/fillertext'
 
 describe FillerText do
