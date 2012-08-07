@@ -11,7 +11,6 @@ standard "lorem ipsum" text or a variety of other clever substitute texts.
 
 Installing FillerText
 ---------------------
-**NOTE:** *This isn't actually live on rubygems yet.*
 
 Install using:
 
