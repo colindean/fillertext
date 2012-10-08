@@ -25,7 +25,7 @@ Using FillerText
 
 Here's how you use FillerText. 
 
-There are two main ways. One is cleaner because it keeps FillerText within its 
+There are two main ways. One is cleaner because it keeps FillerText within its
 own namespace. The other method will add Integer#filler to keep some tasty
 syntactical sugar.
 
@@ -50,6 +50,9 @@ Contributing to FillerText
 --------------------------
 
 Patches welcome. Please file using Github issues.
+
+[![Build
+Status](https://secure.travis-ci.org/colindean/fillertext.png?branch=master)](http://travis-ci.org/colindean/fillertext)
 
 License
 -------
