@@ -3,6 +3,8 @@ FillerText
 
 by @colindean
 
+[![Gem Version](https://badge.fury.io/rb/fillertext.png)](http://badge.fury.io/rb/fillertext)
+
 Introduction
 ------------
 
