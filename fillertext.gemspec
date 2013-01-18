@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "fillertext"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Colin Dean"]
-  s.date = "2012-08-07"
+  s.date = "2013-01-18"
   s.description = "Generates filler text through a direct interface or by monkeypatching Fixnum"
   s.email = "git+gems@cad.cx"
   s.extra_rdoc_files = [
@@ -19,12 +19,14 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rvmrc",
+    ".travis.yml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
     "README.mkd",
     "Rakefile",
     "VERSION",
+    "fillertext.gemspec",
     "lib/fillertext.rb",
     "lib/fillertext/fillertext.rb",
     "lib/fillertext/fixnum.rb",
