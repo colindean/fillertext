@@ -8,6 +8,11 @@ describe FillerText do
   
   describe "when explicity called" do
     include FillerText
+
+    before do
+      FillerText::FillerText.style = FillerText::Style::LoremIpsum
+    end
+
     it "should output sentences" do
       f = FillerText.sentences 5
       #look for the periods
@@ -39,6 +44,10 @@ describe FillerText do
   
   describe "when called from an integer" do
     include FillerText
+
+    before do
+      FillerText::FillerText.style = FillerText::Style::LoremIpsum
+    end
 
     it "should output sentences" do
       f = 5.filler.sentences 
