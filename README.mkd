@@ -3,7 +3,7 @@ FillerText
 
 by @colindean
 
-Help fund development on [![Gittip](http://badgr.co/Gittip/colindean.png)](https://www.gittip.com/colindean/)
+Help fund development on [![Gittip](http://img.shields.io/Gittip/colindean.png)](https://www.gittip.com/colindean/)
 
 [![Gem Version](https://badge.fury.io/rb/fillertext.png)](http://badge.fury.io/rb/fillertext)
 
