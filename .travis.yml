@@ -4,4 +4,3 @@ rvm:
   - "2.4.4"
   # EOL on 2.6 release
   - "2.3.7"
-  - jruby
