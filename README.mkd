@@ -3,8 +3,7 @@ FillerText
 
 by @colindean
 
-Help fund development on [![Gittip](http://img.shields.io/Gittip/colindean.png)](https://www.gittip.com/colindean/)
-
+[![Build Status](https://secure.travis-ci.org/colindean/fillertext.png?branch=master)](http://travis-ci.org/colindean/fillertext)
 [![Gem Version](https://badge.fury.io/rb/fillertext.png)](http://badge.fury.io/rb/fillertext)
 
 Introduction
@@ -55,8 +54,6 @@ Contributing to FillerText
 
 Patches welcome. Please file using Github issues.
 
-[![Build
-Status](https://secure.travis-ci.org/colindean/fillertext.png?branch=master)](http://travis-ci.org/colindean/fillertext)
 
 License
 -------
