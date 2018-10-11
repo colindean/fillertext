@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/colindean/fillertext"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "2.7.7"
   s.summary = "Generates filler/placeholder text in a Rubyistic way"
 
   if s.respond_to? :specification_version then
