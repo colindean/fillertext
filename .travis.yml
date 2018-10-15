@@ -1,7 +1,7 @@
 language: ruby
-before_install:
-  - gem update --system
-  - gem install bundler -v 1.16.1
+dependencies:
+  pre:
+    - gem update bundler
 rvm:
   - "2.5.1"
   - "2.4.4"
