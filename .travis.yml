@@ -1,10 +1,8 @@
 language: ruby
-dependencies:
-  pre:
-    - gem update bundler
 rvm:
   - "2.5.1"
   - "2.4.4"
   # EOL on 2.6 release
   - "2.3.7"
   - jruby
+script: bundle exec rake spec
