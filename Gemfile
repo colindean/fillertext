@@ -7,7 +7,7 @@ end
 
 group :development do
   gem "rdoc", "~> 3.12", ">= 3.12.1"
-  gem "jeweler", "~> 2.3.0"
+  gem "jeweler", "~> 2.3.9"
   gem "simplecov", ">= 0"
   gem "turn"
 end
