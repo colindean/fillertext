@@ -31,14 +31,14 @@ GEM
       rdoc
       semver2
     json (1.8.6)
-    jwt (2.1.0)
+    jwt (2.2.1)
     mime-types (2.99.3)
     mini_portile2 (2.4.0)
     minitest (4.7.5)
     multi_json (1.13.1)
     multi_xml (0.6.0)
-    multipart-post (2.0.0)
-    nokogiri (1.10.2)
+    multipart-post (2.1.1)
+    nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     oauth2 (1.4.1)
       faraday (>= 0.8, < 0.16.0)
@@ -48,7 +48,7 @@ GEM
       rack (>= 1.2, < 3)
     psych (3.1.0)
     rack (2.0.7)
-    rake (12.3.2)
+    rake (12.3.3)
     rdoc (3.12.2)
       json (~> 1.4)
     semver2 (3.4.2)
@@ -66,7 +66,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jeweler (~> 2.3.0)
+  jeweler (~> 2.3.9)
   minitest
   rake
   rdoc (~> 3.12, >= 3.12.1)
@@ -74,4 +74,4 @@ DEPENDENCIES
   turn
 
 BUNDLED WITH
-   2.0.1
+   1.17.3
