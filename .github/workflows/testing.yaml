@@ -13,9 +13,8 @@ jobs:
           - 2.7
           - '3.0'
           - head
-          # fails to bundle install?
-          # - jruby
-          # - jruby-head
+          - jruby
+          - jruby-head
           - truffleruby
           - truffleruby-head
     runs-on: ${{ matrix.os }}
@@ -26,8 +25,7 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: false # 2.5 needs a gem update
-    - run: |
-        gem update --system
+    - run:
         bundle install
       if: ${{ matrix.ruby == '2.5' }}
       # gem in 2.5 default is too old for Psych 4+
