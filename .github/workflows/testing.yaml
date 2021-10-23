@@ -12,10 +12,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
+      if: ${{ matrix.ruby == '2.5' }}
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        bundler-cache: false # 2.5 needs a gem update
+    - run:
+      - gem update --system
+      - bundle install
+      if: ${{ matrix.ruby == '2.5' }}
+      # gem in 2.5 default is too old for Psych 4+
+    - uses: ruby/setup-ruby@v1
+      if: ${{ matrix.ruby != '2.5' }}
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: gem update --system
-      if: ${{ matrix.ruby == '2.5' }}
-      # gem in 2.5 default is too old for Psych 4+
     - run: bundle exec rake
