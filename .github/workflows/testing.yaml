@@ -13,13 +13,19 @@ jobs:
           - 2.7
           - '3.0'
           - head
-          # fails to bundle install?
-          # - jruby
-          # - jruby-head
+          - jruby
+          - jruby-head
           - truffleruby
           - truffleruby-head
     runs-on: ${{ matrix.os }}
     steps:
+    - name: Install build-essential for ubuntu-latest
+      if: matrix.os == 'ubuntu-latest'
+      run: sudo apt-get install build-essential
+
+    - name: Install build tools for macos-latest
+      if: matrix.os == 'macos-latest'
+      run: xcode-select --install
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
       if: ${{ matrix.ruby == '2.5' }}
