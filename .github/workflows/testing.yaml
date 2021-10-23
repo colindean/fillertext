@@ -8,20 +8,20 @@ jobs:
         os: [ubuntu-latest, macos-latest]
         # Due to https://github.com/actions/runner/issues/849, we have to use quotes for '3.0'
         ruby:
-          - 2.5
-          - 2.6
-          - 2.7
-          - '3.0'
-          - head
+          # - 2.5
+          # - 2.6
+          # - 2.7
+          # - '3.0'
+          # - head
           - jruby
           - jruby-head
-          - truffleruby
-          - truffleruby-head
+          # - truffleruby
+          # - truffleruby-head
     runs-on: ${{ matrix.os }}
     steps:
     - name: Install build-essential for ubuntu-latest
       if: matrix.os == 'ubuntu-latest'
-      run: apt-get update && apt-get install -y build-essential
+      run: apt-get update && apt-get install -y build-essential && sudo apt-get install ruby-dev
 
     - name: Install build tools for macos-latest
       if: matrix.os == 'macos-latest'
