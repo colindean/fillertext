@@ -1,5 +1,4 @@
 name: Release
-
 on:
   push:
     branches:
@@ -20,3 +19,4 @@ jobs:
           bump-minor-pre-major: true
           # Path to our version file to increment
           version-file: "VERSION"
+          
