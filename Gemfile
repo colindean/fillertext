@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 group :test do
   gem 'rake'
-  gem 'minitest'
+  gem 'minitest', "> 5.0.0"
 end
 
 group :development do

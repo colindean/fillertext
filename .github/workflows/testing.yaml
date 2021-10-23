@@ -8,25 +8,17 @@ jobs:
         os: [ubuntu-latest, macos-latest]
         # Due to https://github.com/actions/runner/issues/849, we have to use quotes for '3.0'
         ruby:
-          # - 2.5
-          # - 2.6
-          # - 2.7
-          # - '3.0'
-          # - head
+          - 2.5
+          - 2.6
+          - 2.7
+          - '3.0'
+          - head
           - jruby
           - jruby-head
-          # - truffleruby
-          # - truffleruby-head
+          - truffleruby
+          - truffleruby-head
     runs-on: ${{ matrix.os }}
     steps:
-    - name: Install build-essential for ubuntu-latest
-      if: matrix.os == 'ubuntu-latest'
-      run: sudo apt-get update && sudo apt-get install -y build-essential ruby-dev
-
-    - name: Install build tools for macos-latest
-      if: matrix.os == 'macos-latest'
-      run: sudo xcode-select -switch /
-      
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
       if: ${{ matrix.ruby == '2.5' }}
@@ -34,8 +26,6 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: false # 2.5 needs a gem update
     - run:
-        gem install racc -v '1.6.0' --source 'https://rubygems.org/'
-        gem update --system
         bundle install
       if: ${{ matrix.ruby == '2.5' }}
       # gem in 2.5 default is too old for Psych 4+
