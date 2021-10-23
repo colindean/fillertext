@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    branches:
+    - main
+jobs:
+  fillertext:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v2
+        id: release
+        with:
+          # The release type
+          release-type: ruby
+          # A name for the artifact releases are being created for
+          # which is the name of our gem
+          package-name: fillertext
+          # Should breaking changes before 1.0.0 produce minor bumps?
+          bump-minor-pre-major: true
+          # Path to our version file to increment
+          version-file: "VERSION"
