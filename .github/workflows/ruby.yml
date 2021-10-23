@@ -1,0 +1,39 @@
+name: Testing
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        # Due to https://github.com/actions/runner/issues/849, we have to use quotes for '3.0'
+        ruby:
+          - 2.5
+          - 2.6
+          - 2.7
+          - '3.0'
+          - head
+          - jruby
+          - jruby-head
+          - truffleruby
+          - truffleruby-head
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+    - run: sudo apt-get install build-essential
+      if: ${{ matrix.ruby == '2.5' }}
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        bundler-cache: false # 2.5 needs a gem update
+    - run: |
+        gem update --system
+        bundle install
+      if: ${{ matrix.ruby == '2.5' }}
+      # gem in 2.5 default is too old for Psych 4+
+    - uses: ruby/setup-ruby@v1
+      if: ${{ matrix.ruby != '2.5' }}
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - run: bundle exec rake
