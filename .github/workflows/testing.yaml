@@ -29,12 +29,12 @@ jobs:
       
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
-    - run: gem install racc -v '1.6.0' --source 'https://rubygems.org/'
       if: ${{ matrix.ruby == '2.5' }}
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: false # 2.5 needs a gem update
     - run:
+        gem install racc -v '1.6.0' --source 'https://rubygems.org/'
         gem update --system
         bundle install
       if: ${{ matrix.ruby == '2.5' }}
