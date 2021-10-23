@@ -3,9 +3,8 @@ FillerText
 
 by @colindean
 
-![GitHub Actions Build Status](https://github.com/colindean/fillertext/actions/workflows/testing.yaml/badge.svg)
-[![Build Status](https://secure.travis-ci.org/colindean/fillertext.png?branch=master)](http://travis-ci.org/colindean/fillertext)
-[![Gem Version](https://badge.fury.io/rb/fillertext.png)](http://badge.fury.io/rb/fillertext)
+[![GitHub Actions Build Status](https://github.com/colindean/fillertext/actions/workflows/testing.yaml/badge.svg)](https://github.com/colindean/fillertext/actions/workflows/testing.yaml)
+[![Gem Version](https://badge.fury.io/rb/fillertext.svg)](https://badge.fury.io/rb/fillertext)
 
 Introduction
 ------------
