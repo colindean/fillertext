@@ -25,7 +25,7 @@ jobs:
 
     - name: Install build tools for macos-latest
       if: matrix.os == 'macos-latest'
-      run: xcode-select --install
+      run: sudo xcode-select -switch /
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
       if: ${{ matrix.ruby == '2.5' }}
