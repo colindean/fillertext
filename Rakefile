@@ -9,11 +9,11 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 require 'rake/testtask'
-require 'jeweler'
+require 'juwelier'
 require 'simplecov'
 require 'rdoc/task'
 
-Jeweler::Tasks.new do |gem|
+Juwelier::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "fillertext"
   gem.homepage = "http://github.com/colindean/fillertext"
@@ -25,7 +25,7 @@ Jeweler::Tasks.new do |gem|
   # dependencies defined in Gemfile
 end
 
-Jeweler::RubygemsDotOrgTasks.new
+Juwelier::RubygemsDotOrgTasks.new
 
 Rake::TestTask.new(:spec) do |t|
   t.libs.push 'lib'
