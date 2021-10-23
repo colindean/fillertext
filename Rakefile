@@ -48,4 +48,9 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
+desc "Run irb session with loaded gem"
+task :irb do
+  exec 'irb -I lib -r fillertext'
+end
+
 task :default => :spec
