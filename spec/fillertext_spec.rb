@@ -101,7 +101,7 @@ describe FillerText do
 
     it "should use mike lange" do
       t = "Mike Lange"
-      FillerText::FillerText.style = FillerText::Style::YinzerIpsum
+      FillerText::FillerText.style = FillerText::Style::MikeLange
       t.length.filler.characters.must_equal t
     end
 
