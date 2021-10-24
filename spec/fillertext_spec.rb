@@ -99,6 +99,12 @@ describe FillerText do
       _(t.length.filler.characters).must_equal t
     end
 
+    it "should use mike lange" do
+      t = "Mike Lange"
+      FillerText::FillerText.style = FillerText::Style::MikeLange
+      t.length.filler.characters.must_equal t
+    end
+
     #add more styles here
 
   end

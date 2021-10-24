@@ -29,25 +29,36 @@ Using FillerText
 Here's how you use FillerText. 
 
 There are two main ways. One is cleaner because it keeps FillerText within its
-own namespace. The other method will add Integer#filler to keep some tasty
+own namespace. The other method will add Fixnum#filler to keep some tasty
 syntactical sugar.
 
-    FillerText::FillerText.sentences 5
-    FillerText::FillerText.words 2
-    FillerText::FillerText.characters 5
-    FillerText::FillerText.bytes 4
-    FillerText::FillerText.paragraphs 1
+```ruby
+FillerText::FillerText.sentences 5
+FillerText::FillerText.words 2
+FillerText::FillerText.characters 5
+FillerText::FillerText.bytes 4
+FillerText::FillerText.paragraphs 1
+```
 
 or the *much* easier and intended method:
 
-    2.filler.sentences
-    1.filler.paragraphs
+```ruby
+2.filler.sentences
+1.filler.paragraphs
+```
 
 You can also change the style from the default "lorem ipsum" to something else.
 
-    FillerText::FillerText.style = FillerText::Style::LoremIpsum
-    FillerText::FillerText.style = FillerText::Style::HipsterIpsum
-    FillerText::FillerText.style = FillerText::Style::YinzerIpsum
+```ruby
+# the old favorite
+FillerText::FillerText.style = FillerText::Style::LoremIpsum
+# a mash of words
+FillerText::FillerText.style = FillerText::Style::HipsterIpsum
+# handmade just like grandma's pierogies
+FillerText::FillerText.style = FillerText::Style::YinzerIpsum
+# homage to the great Pittsburgh Penguins announcer
+FillerTest::FillerText.style = FillerText::Style::MikeLange
+```
 
 Contributing to FillerText
 --------------------------
@@ -60,7 +71,7 @@ License
 
 FillerText is licensed under the MIT license.
 
-Copyright (C) 2011 by Colin Dean
+Copyright (C) 2011-2021 by Colin Dean
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
