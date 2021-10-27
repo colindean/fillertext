@@ -13,7 +13,7 @@ jobs:
           release-type: ruby
           package-name: fillertext
           bump-minor-pre-major: true
-          version-file: "VERSION"
+          version-file: "lib/fillertext/version.rb"
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
       - uses: ruby/setup-ruby@v1
