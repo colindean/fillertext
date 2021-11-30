@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: >
+  If you use this software in research or other work
+  wherein you are citing references and tools,
+  please consider citing fillertext as indicated below.
+authors:
+- family-names: "Dean"
+  given-names: "Colin"
+  orcid: "https://orcid.org/0000-0002-3374-6891"
+title: "fillertext"
+version: 0.2.1
+date-released: 2021-10-27
+url: "https://github.com/colindean/fillertext"
