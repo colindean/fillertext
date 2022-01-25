@@ -1,0 +1,4 @@
+example_id                     | status | run_time        |
+------------------------------ | ------ | --------------- |
+./spec/fillertext_spec.rb[1:1] | passed | 0.00053 seconds |
+./spec/fillertext_spec.rb[1:2] | passed | 0.00011 seconds |

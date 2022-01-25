@@ -1,15 +1,19 @@
-module FillerText::Style
+# frozen_string_literal: true
+
+module FillerText
+  module Style
+    # Style: MikeLange
     class MikeLange
-        # https://en.wikipedia.org/wiki/Mike_Lange
-        #
-        # sourced from:
-        #     https://en.wikiquote.org/wiki/Mike_Lange
-        #     https://quotes.yourdictionary.com/author/mike-lange/
-        #     https://pierogisnat.blogspot.com/2008/04/top-10-mike-lange-sayings.html
-        #     https://www.quora.com/What-are-all-Mike-Langes-catch-phrases?share=1
-        #
-        def self.text
-            "Mike Lange just lost his liquor license.
+      # https://en.wikipedia.org/wiki/Mike_Lange
+      #
+      # sourced from:
+      #     https://en.wikiquote.org/wiki/Mike_Lange
+      #     https://quotes.yourdictionary.com/author/mike-lange/
+      #     https://pierogisnat.blogspot.com/2008/04/top-10-mike-lange-sayings.html
+      #     https://www.quora.com/What-are-all-Mike-Langes-catch-phrases?share=1
+      #
+      def self.text
+        "Mike Lange just lost his liquor license.
             Ladies and Gentlemen… Elvis has left the building.
             Scratch my back with a hacksaw.
             Shave my face with a rusty razor.
@@ -32,6 +36,7 @@ module FillerText::Style
             He forgot one thing: the puck!
             Make me a milkshake, Malkin!
             And ladies and gentlemen, the kitchen is closed!"
-        end
+      end
     end
+  end
 end

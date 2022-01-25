@@ -1,71 +1,45 @@
+# frozen_string_literal: true
+
+Dir["./lib/fillertext/styles/*.rb"].sort.each { |file| require file }
+
+# Helper module to choose styles and number
 module FillerText
-  #this has to be here because of file require order issues
-  #todo: fix this
-  module Style; class LoremIpsum; end; end
+  class << self
+    attr_accessor :style, :num
+  end
 
-  def self.paragraphs(n=nil)
-    FillerText.paragraphs n
+  def self.nos=(nos)
+    @num = nos
   end
-  def self.words(n=nil)
-    FillerText.words n
-  end
-  def self.bytes(n=nil)
-    FillerText.bytes n
-  end
-  def self.characters(n=nil)
-    FillerText.characters n
-  end
-  def self.sentences(n=nil)
-    FillerText.sentences n
-  end
-  
-  class FillerText
 
-    @@style = Style::LoremIpsum
-  
-    def self.style=(style)
-      @@style = style
-    end
-
-    def self.style
-      @@style
-    end
-
-    @@num = 0
-  
-    def self.n=(n)
-      @@num = n
-    end
-    
-    def self.n
-      @@num
-    end
-  
-    def self.bytes(n=nil)
-      n ||= self.n
-      self.style.text[0,n]
-    end
-    
-    def self.characters(n=nil)
-      #same thing for now
-      self.bytes(n)
-    end
-    
-    def self.words(n=nil)
-      n ||= self.n
-      #the idea here is to find the nth space and return everything before it
-      self.style.text.split[0,n].join(" ").gsub(/[^\w\s]/,'')
-    end
-    
-    def self.sentences(n=nil)
-      n ||= self.n
-      self.style.text.split('.').slice(0,n).join(". ")
-    end
-    
-    def self.paragraphs(n=nil)
-      n ||= self.n
-      self.style.text.split("\n").slice(0,n).join("\n")
-    end
-    
+  def self.nos
+    @num
   end
+
+  def self.bytes(nos = nil)
+    nos ||= self.nos
+    style.text[0, nos]
+  end
+
+  def self.characters(nos = nil)
+    bytes(nos)
+  end
+
+  def self.words(nos = nil)
+    nos ||= self.nos
+    style.text.split[0, nos].join(" ").gsub(/[^\w\s]/, "")
+  end
+
+  def self.sentences(nos = nil)
+    nos ||= self.nos
+    style.text.split(".").slice(0, nos).join(". ")
+  end
+
+  def self.paragraphs(nos = nil)
+    nos ||= self.nos
+    style.text.split("\n").slice(0, nos).join("\n")
+  end
+
+  @style = Style::LoremIpsum
+  @num = 0
 end

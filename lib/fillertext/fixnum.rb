@@ -1,14 +1,15 @@
+# frozen_string_literal: true
+
 module FillerText
-  module Fixnum
-  
+  # Modification for Integer class
+  module Integer
     def filler
       FillerText.n = self
       FillerText
     end
-
   end
 end
 
-class Fixnum
-  include FillerText::Fixnum
+class Integer
+  include FillerText::Integer
 end

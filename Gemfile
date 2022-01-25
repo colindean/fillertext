@@ -1,13 +1,12 @@
-source "http://rubygems.org"
+# frozen_string_literal: true
 
-group :test do
-  gem 'rake'
-  gem 'minitest', "> 5.0.0"
-end
+source "https://rubygems.org"
 
-group :development do
-  gem "rdoc"
-  gem "juwelier", ">= 2.3.9"
-  gem "simplecov"
-  gem "turn"
-end
+# Specify your gem's dependencies in fillertext.gemspec
+gemspec
+
+gem "rake", "~> 13.0"
+
+gem "rspec", "~> 3.0"
+
+gem "rubocop", "~> 1.21"

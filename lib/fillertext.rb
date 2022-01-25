@@ -1,7 +1,9 @@
-require_relative 'fillertext/fillertext'
-require_relative 'fillertext/fixnum'
+# frozen_string_literal: true
 
-#also, load the styles
+require_relative "fillertext/fillertext"
+require_relative "fillertext/fixnum"
+require_relative "fillertext/version"
 
-Dir[File.dirname(__FILE__) + File::SEPARATOR + 'fillertext/styles/*.rb'].each{ |file| require file }
-
+# Generates filler/placeholder text in a Rubyistic way
+module FillerText
+end
