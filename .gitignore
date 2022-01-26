@@ -12,12 +12,12 @@ doc
 # bundler
 .bundle
 
-# jeweler generated
-pkg
-
 #etc
 .DS_Store
 *.swp
 
 # Gemfile lock file
 Gemfile.lock
+
+# RSpec file generated
+.rspec_status
