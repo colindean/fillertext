@@ -1,45 +1,36 @@
 # frozen_string_literal: true
 
-Dir["./lib/fillertext/styles/*.rb"].sort.each { |file| require file }
+Dir[File.join(__dir__, "styles/*.rb")].sort.each { |file| require_relative file }
 
-# Helper module to choose styles and number
+# Helper module to choose styles
 module FillerText
   class << self
     attr_accessor :style, :num
   end
 
-  def self.nos=(nos)
-    @num = nos
-  end
-
-  def self.nos
-    @num
-  end
-
-  def self.bytes(nos = nil)
-    nos ||= self.nos
-    style.text[0, nos]
-  end
-
-  def self.characters(nos = nil)
-    bytes(nos)
-  end
-
-  def self.words(nos = nil)
-    nos ||= self.nos
-    style.text.split[0, nos].join(" ").gsub(/[^\w\s]/, "")
-  end
-
-  def self.sentences(nos = nil)
-    nos ||= self.nos
-    style.text.split(".").slice(0, nos).join(". ")
-  end
-
-  def self.paragraphs(nos = nil)
-    nos ||= self.nos
-    style.text.split("\n").slice(0, nos).join("\n")
-  end
-
   @style = FillerText::Style::LoremIpsum
-  @num = 0
+
+  def self.bytes(num = nil)
+    num ||= self.num
+    style.text[0, num]
+  end
+
+  def self.characters(num = nil)
+    bytes(num)
+  end
+
+  def self.words(num = nil)
+    num ||= self.num
+    style.text.split[0, num].join(" ").gsub(/[^\w\s]/, "")
+  end
+
+  def self.sentences(num = nil)
+    num ||= self.num
+    style.text.split(".").slice(0, num).join(". ")
+  end
+
+  def self.paragraphs(num = nil)
+    num ||= self.num
+    style.text.split("\n").slice(0, num).join("\n")
+  end
 end
