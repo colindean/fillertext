@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - master
+    - migrate_from_juwlier
 jobs:
   fillertext:
     runs-on: ubuntu-latest
