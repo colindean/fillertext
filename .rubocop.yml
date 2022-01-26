@@ -172,3 +172,8 @@ Metrics/MethodLength:
   Enabled: true
   Exclude:
     - 'lib/fillertext/styles/*.rb'
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'spec/*_spec.rb'
