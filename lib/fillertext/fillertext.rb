@@ -40,6 +40,6 @@ module FillerText
     style.text.split("\n").slice(0, nos).join("\n")
   end
 
-  @style = Style::LoremIpsum
+  @style = FillerText::Style::LoremIpsum
   @num = 0
 end
