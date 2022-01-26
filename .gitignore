@@ -21,3 +21,6 @@ Gemfile.lock
 
 # RSpec file generated
 .rspec_status
+
+# gem build
+*.gem
