@@ -22,12 +22,12 @@ Gem::Specification.new do |s|
 
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.mkd"
+    "README.md"
   ]
   s.licenses = ["MIT"]
 
-  s.add_development_dependency "rdoc"
-  s.add_development_dependency "simplecov"
+  s.add_development_dependency "rdoc", "~> 4.2", ">= 4.2.2"
+  s.add_development_dependency "simplecov", "~> 0.21.2"
 
   s.required_ruby_version = ">= 2.6.0"
   s.metadata["rubygems_mfa_required"] = "true"
