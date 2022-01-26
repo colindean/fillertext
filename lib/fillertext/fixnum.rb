@@ -4,7 +4,7 @@ module FillerText
   # Modification for Integer class
   module Integer
     def filler
-      FillerText.n = self
+      FillerText.nos = self
       FillerText
     end
   end
