@@ -18,7 +18,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0.0
+          ruby-version: 2.6.0
         if: ${{ steps.release.outputs.release_created }}
       - run: bundle install
         if: ${{ steps.release.outputs.release_created }}
