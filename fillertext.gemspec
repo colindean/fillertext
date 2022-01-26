@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "fillertext"
-  s.version = "0.2.0"
+  s.version = "0.2.2"
   s.authors = ["Colin Dean"]
   s.email = "git+gems@cad.cx"
 
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   ]
   s.licenses = ["MIT"]
 
-  s.add_development_dependency "rdoc", "~> 4.2", ">= 4.2.2"
+  s.add_development_dependency "rdoc", "~> 6.4"
   s.add_development_dependency "simplecov", "~> 0.21.2"
 
   s.required_ruby_version = ">= 2.6.0"
