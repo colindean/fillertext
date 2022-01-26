@@ -2,11 +2,7 @@
 
 RSpec.describe FillerText do
   describe "when called from an integer" do
-    include FillerText
-
-    before do
-      FillerText.style = FillerText::Style::LoremIpsum
-    end
+    before { FillerText.style = FillerText::Style::LoremIpsum }
 
     it "should output sentences" do
       f = 5.filler.sentences
