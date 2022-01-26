@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
+require "simplecov"
 require "fillertext"
+
+SimpleCov.start
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
