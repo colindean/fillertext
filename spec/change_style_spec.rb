@@ -8,19 +8,19 @@ RSpec.describe FillerText do
       expect(t.length.filler.characters).to eql t
     end
 
-    it "should use hipster ipsum" do
+    it "should use HipsterIpsum" do
       FillerText.style = FillerText::Style::HipsterIpsum
       t = "Hipster ipsum"
       expect(t.length.filler.characters).to eql t
     end
 
-    it "should use yinzer ipsum" do
+    it "should use YinzerIpsum" do
       t = "Yinzer ipsum"
       FillerText.style = FillerText::Style::YinzerIpsum
       expect(t.length.filler.characters).to eql t
     end
 
-    it "should use mike lange" do
+    it "should use MikeLange" do
       t = "Mike Lange"
       FillerText.style = FillerText::Style::MikeLange
       expect(t.length.filler.characters).to eql t
