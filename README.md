@@ -3,7 +3,8 @@ FillerText
 
 by @colindean
 
-[![GitHub Actions Build Status](https://github.com/colindean/fillertext/actions/workflows/testing.yaml/badge.svg)](https://github.com/colindean/fillertext/actions/workflows/testing.yaml)
+[![Testing Build Status](https://github.com/colindean/fillertext/actions/workflows/testing.yml/badge.svg)](https://github.com/colindean/fillertext/actions/workflows/testing.yml)
+[![Release Build Status](https://github.com/colindean/fillertext/actions/workflows/release.yml/badge.svg)](https://github.com/colindean/fillertext/actions/workflows/release.yml)
 [![Gem Version](https://badge.fury.io/rb/fillertext.svg)](https://badge.fury.io/rb/fillertext)
 
 Introduction
@@ -71,6 +72,25 @@ Patches welcome. Please file using Github issues.
 I sincerely thank Ashvith Shetty (@Ashvith) for modernizing the build system
 for this software in 2022. Things are a lot easier to handle now than they were
 in 2011!
+
+
+### Releases
+
+As of 0.2.3, FillerText uses
+[release-please](https://github.com/googleapis/release-please) along with
+[release-please-action](https://github.com/google-github-actions/release-please-action)
+for release automation in GitHub Actions.
+
+Following [Conventional Commits v1.0
+standard](https://www.conventionalcommits.org/en/v1.0.0/),
+prefix a commit with `fix:` to increment the patch version in a future release,
+prefix with `feat:` to increment the minor version, and
+prefix with `feat!:` or `fix!:` or `refactor!:` to mark a breaking change and
+a major version increment.
+
+For more information, read the [release-please-action
+documentation](https://github.com/google-github-actions/release-please-action#how-release-please-works)
+on releasing.
 
 License
 -------
