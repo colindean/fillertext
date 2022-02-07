@@ -12,7 +12,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Adds release instructions and tests an automated release ([2dd6c80](https://github.com/colindean/fillertext/commit/2dd6c80d83eac2b7c05e431a505fbb4a4b5da175))
 
-### [Unreleased](https://www.github.com/colindean/fillertext/compare/v0.2.1...master)
 
 ## [0.2.1](https://www.github.com/colindean/fillertext/compare/v0.2.0...v0.2.1) (2021-10-27)
 
