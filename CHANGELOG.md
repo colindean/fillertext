@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### [0.3.3](https://github.com/colindean/fillertext/compare/v0.3.2...v0.3.3) (2022-02-07)
+
+
+### Bug Fixes
+
+* Get all git tags during release process ([fc54124](https://github.com/colindean/fillertext/commit/fc54124f77e218a5ae4f383f4f101e5d1404bcdc))
+* Satisfies Rubocop checks ([531ad51](https://github.com/colindean/fillertext/commit/531ad5191f40a23b28006db41cd66eda499c35c8))
+
 ### [0.3.2](https://github.com/colindean/fillertext/compare/v0.3.1...v0.3.2) (2022-02-07)
 
 
