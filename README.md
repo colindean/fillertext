@@ -69,7 +69,7 @@ Contributing to FillerText
 
 Patches welcome. Please file using Github issues.
 
-I sincerely thank Ashvith Shetty (@Ashvith) for modernizing the build system
+I sincerely thank [Ashvith Shetty](https://github.com/Ashvith) for modernizing the build system
 for this software in 2022. Things are a lot easier to handle now than they were
 in 2011!
 
