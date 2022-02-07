@@ -1,8 +1,10 @@
 # frozen_string_literal: true
+$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
+require "fillertext/version"
 
 Gem::Specification.new do |s|
   s.name = "fillertext"
-  s.version = "0.2.2"
+  s.version = FillerText::VERSION
   s.authors = ["Colin Dean"]
   s.email = "git+gems@cad.cx"
 
