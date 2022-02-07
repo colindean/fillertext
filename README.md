@@ -15,11 +15,12 @@ Installing FillerText
 ---------------------
 
 Install using:
-```ruby
+
+```sh
 gem install fillertext
 ```
 
-or add the gem to your project's Gemfile:
+or add the gem to your project's `Gemfile`:
 
 ```ruby
 gem 'fillertext'
@@ -28,10 +29,10 @@ gem 'fillertext'
 Using FillerText
 ----------------
 
-Here's how you use FillerText. 
+Here's how you use FillerText.
 
 There are two main ways. One is cleaner because it keeps FillerText within its
-own namespace. The other method will add Fixnum#filler to keep some tasty
+own namespace. The other method will add `Fixnum#filler` to keep some tasty
 syntactical sugar.
 
 ```ruby
@@ -66,3 +67,15 @@ Contributing to FillerText
 --------------------------
 
 Patches welcome. Please file using Github issues.
+
+I sincerely thank Ashvith Shetty (@Ashvith) for modernizing the build system
+for this software in 2022. Things are a lot easier to handle now than they were
+in 2011!
+
+License
+-------
+
+FillerText is licensed under the MIT license.
+Copyright (C) 2011-2022 by Colin Dean.
+See [LICENSE.txt](LICENSE.txt) for more.
+
