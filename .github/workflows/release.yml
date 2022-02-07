@@ -18,6 +18,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - name: Get all git tags
         run: git fetch --prune --unshallow --tags
+        if: ${{ steps.release.outputs.release_created }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6.0
