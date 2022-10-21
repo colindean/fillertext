@@ -5,12 +5,12 @@ source "https://rubygems.org"
 # Specify your gem's dependencies in fillertext.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
+gem "rake"
 
-gem "rspec", "~> 3.0"
+gem "rspec"
 
-gem "rubocop", "~> 1.21"
+gem "rubocop"
 
-gem "rubocop-rake", "~> 0.5.1"
+gem "rubocop-rake"
 
-gem "rubocop-rspec", "~> 1.3", ">= 1.3.1"
+gem "rubocop-rspec"
