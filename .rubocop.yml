@@ -15,157 +15,157 @@ Layout/LineLength:
   Exclude:
     - 'lib/fillertext/styles/*.rb'
 
-Gemspec/DateAssignment: 
+Gemspec/DeprecatedAttributeAssignment:
   Enabled: true
 
-Gemspec/RequireMFA: 
+Gemspec/RequireMFA:
   Enabled: true
 
-Layout/LineEndStringConcatenationIndentation: 
+Layout/LineEndStringConcatenationIndentation:
   Enabled: true
 
-Layout/SpaceBeforeBrackets: 
+Layout/SpaceBeforeBrackets:
   Enabled: true
 
-Lint/AmbiguousAssignment: 
+Lint/AmbiguousAssignment:
   Enabled: true
 
-Lint/AmbiguousOperatorPrecedence: 
+Lint/AmbiguousOperatorPrecedence:
   Enabled: true
 
-Lint/AmbiguousRange: 
+Lint/AmbiguousRange:
   Enabled: true
 
-Lint/DeprecatedConstants: 
+Lint/DeprecatedConstants:
   Enabled: true
 
-Lint/DuplicateBranch: 
+Lint/DuplicateBranch:
   Enabled: true
 
-Lint/DuplicateRegexpCharacterClassElement: 
+Lint/DuplicateRegexpCharacterClassElement:
   Enabled: true
 
-Lint/EmptyBlock: 
+Lint/EmptyBlock:
   Enabled: true
 
-Lint/EmptyClass: 
+Lint/EmptyClass:
   Enabled: true
 
-Lint/EmptyInPattern: 
+Lint/EmptyInPattern:
   Enabled: true
 
-Lint/IncompatibleIoSelectWithFiberScheduler: 
+Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: true
 
-Lint/LambdaWithoutLiteralBlock: 
+Lint/LambdaWithoutLiteralBlock:
   Enabled: true
 
-Lint/NoReturnInBeginEndBlocks: 
+Lint/NoReturnInBeginEndBlocks:
   Enabled: true
 
-Lint/NumberedParameterAssignment: 
+Lint/NumberedParameterAssignment:
   Enabled: true
 
-Lint/OrAssignmentToConstant: 
+Lint/OrAssignmentToConstant:
   Enabled: true
 
-Lint/RedundantDirGlobSort: 
+Lint/RedundantDirGlobSort:
   Enabled: true
 
-Lint/RequireRelativeSelfPath: 
+Lint/RequireRelativeSelfPath:
   Enabled: true
 
-Lint/SymbolConversion: 
+Lint/SymbolConversion:
   Enabled: true
 
-Lint/ToEnumArguments: 
+Lint/ToEnumArguments:
   Enabled: true
 
-Lint/TripleQuotes: 
+Lint/TripleQuotes:
   Enabled: true
 
-Lint/UnexpectedBlockArity: 
+Lint/UnexpectedBlockArity:
   Enabled: true
 
-Lint/UnmodifiedReduceAccumulator: 
+Lint/UnmodifiedReduceAccumulator:
   Enabled: true
 
-Lint/UselessRuby2Keywords: 
+Lint/UselessRuby2Keywords:
   Enabled: true
 
-Naming/BlockForwarding: 
+Naming/BlockForwarding:
   Enabled: true
 
-Security/IoMethods: 
+Security/IoMethods:
   Enabled: true
 
-Style/ArgumentsForwarding: 
+Style/ArgumentsForwarding:
   Enabled: true
 
-Style/CollectionCompact: 
+Style/CollectionCompact:
   Enabled: true
 
-Style/DocumentDynamicEvalDefinition: 
+Style/DocumentDynamicEvalDefinition:
   Enabled: true
 
-Style/EndlessMethod: 
+Style/EndlessMethod:
   Enabled: true
 
-Style/FileRead: 
+Style/FileRead:
   Enabled: true
 
-Style/FileWrite: 
+Style/FileWrite:
   Enabled: true
 
-Style/HashConversion: 
+Style/HashConversion:
   Enabled: true
 
-Style/HashExcept: 
+Style/HashExcept:
   Enabled: true
 
-Style/IfWithBooleanLiteralBranches: 
+Style/IfWithBooleanLiteralBranches:
   Enabled: true
 
-Style/InPatternThen: 
+Style/InPatternThen:
   Enabled: true
 
-Style/MapToHash: 
+Style/MapToHash:
   Enabled: true
 
-Style/MultilineInPatternThen: 
+Style/MultilineInPatternThen:
   Enabled: true
 
-Style/NegatedIfElseCondition: 
+Style/NegatedIfElseCondition:
   Enabled: true
 
-Style/NilLambda: 
+Style/NilLambda:
   Enabled: true
 
-Style/NumberedParameters: 
+Style/NumberedParameters:
   Enabled: true
 
-Style/NumberedParametersLimit: 
+Style/NumberedParametersLimit:
   Enabled: true
 
-Style/OpenStructUse: 
+Style/OpenStructUse:
   Enabled: true
 
-Style/QuotedSymbols: 
+Style/QuotedSymbols:
   Enabled: true
 
-Style/RedundantArgument: 
+Style/RedundantArgument:
   Enabled: true
 
-Style/RedundantSelfAssignmentBranch: 
+Style/RedundantSelfAssignmentBranch:
   Enabled: true
 
-Style/SelectByRegexp: 
+Style/SelectByRegexp:
   Enabled: true
 
-Style/StringChars: 
+Style/StringChars:
   Enabled: true
 
-Style/SwapValues: 
+Style/SwapValues:
   Enabled: true
 
 Metrics/MethodLength:
