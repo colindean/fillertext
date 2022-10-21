@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require "fillertext"
 
 RSpec.describe FillerText do
   describe "when explicitly called" do
