@@ -66,6 +66,20 @@ FillerTest::FillerText.style = FillerText::Style::MikeLange
 
 Contributing to FillerText
 --------------------------
+### Setting up the project
+1. Create a fork of the project.
+2. `git clone` the forked repository to your local system.
+3. Make sure that the Ruby version is `>= 2.6.0`.
+4. Run `bundle install`.
+
+### Testing the project
+FillerText uses [RSpec](https://github.com/rspec/rspec-core) for unit testing and [SimpleCov](https://github.com/simplecov-ruby/simplecov) for code coverage. New specifications can be added inside the `spec/` directory.
+
+1. Make sure that the project is set up properly (see [Setting up the project](#setting-up-the-project))
+2.
+	1. Run `rspec` to run all the tests by default
+	2. To run only a selected few tests, run `rspec spec/<test_you're_interested_in>_spec.rb`
+3. To access code coverage details, run `xdg-open coverage/index.html` (on Linux) or `open coverage/index.html` (on Mac)
 
 Patches welcome. Please file using Github issues.
 
@@ -98,4 +112,3 @@ License
 FillerText is licensed under the MIT license.
 Copyright (C) 2011-2022 by Colin Dean.
 See [LICENSE.txt](LICENSE.txt) for more.
-
