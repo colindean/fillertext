@@ -29,9 +29,6 @@ Gem::Specification.new do |s|
   ]
   s.licenses = ["MIT"]
 
-  s.add_development_dependency "rdoc", "~> 6.4"
-  s.add_development_dependency "simplecov", "~> 0.21.2"
-
   s.required_ruby_version = ">= 2.6.0"
   s.metadata["rubygems_mfa_required"] = "true"
 end
