@@ -7,7 +7,7 @@ RSpec.describe FillerText do
     before { described_class.style = FillerText::Style::LoremIpsum }
 
     it "outputs sentences" do
-      expect(described_class.sentences(5).scan(/\./).size).to be 4
+      expect(described_class.sentences(5).scan(".").size).to be 4
     end
 
     it "outputs words" do
@@ -23,7 +23,7 @@ RSpec.describe FillerText do
     end
 
     it "outputs paragraphs" do
-      expect(described_class.paragraphs(5).scan(/\n/).size).to be 4
+      expect(described_class.paragraphs(5).scan("\n").size).to be 4
     end
   end
 end

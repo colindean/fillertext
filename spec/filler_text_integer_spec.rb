@@ -9,7 +9,7 @@ RSpec.describe FillerText do
     it "outputs sentences" do
       f = 5.filler.sentences
       # look for the periods
-      expect(f.scan(/\./).size).to be 4
+      expect(f.scan(".").size).to be 4
     end
 
     it "outputs words" do
@@ -31,7 +31,7 @@ RSpec.describe FillerText do
     it "outputs paragraphs" do
       f = 5.filler.paragraphs
       # look for newlines
-      expect(f.scan(/\n/).size).to be 4
+      expect(f.scan("\n").size).to be 4
     end
   end
 end
