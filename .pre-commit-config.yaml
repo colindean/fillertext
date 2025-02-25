@@ -20,4 +20,9 @@ repos:
   hooks:
   - id: rubocop
   - id: rspec
-  - id: chef-cookbook-version
+
+ci:
+  skip:
+  # no ruby env on pre-commit.ci
+  - rubocop
+  - rspec
