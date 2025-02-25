@@ -5,6 +5,7 @@ module FillerText
     # Style: MikeLange
     class MikeLange
       # https://en.wikipedia.org/wiki/Mike_Lange
+      # 3 March 1948 – 19 February 2025
       #
       # sourced from:
       #     https://en.wikiquote.org/wiki/Mike_Lange
