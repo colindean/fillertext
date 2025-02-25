@@ -19,6 +19,8 @@ jobs:
           version-file: "lib/fillertext/version.rb"
       - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
+        with:
+          persist-credentials: false
       - name: Get all git tags
         run: git fetch --prune --unshallow --tags
         if: ${{ steps.release.outputs.release_created }}
