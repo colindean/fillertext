@@ -69,7 +69,7 @@ Contributing to FillerText
 ### Setting up the project
 1. [Create a fork](https://github.com/colindean/fillertext/fork) of the GitHub project repo.
 2. `git clone` the forked repository to your local system.
-3. Make sure that the version of Ruby you're using meets the [minimum requirement in the gemspec](https://github.com/colindean/fillertext/blob/master/fillertext.gemspec#L15). 
+3. Make sure that the version of Ruby you're using meets the [minimum requirement in the gemspec](fillertext.gemspec#L15).
 4. Run `bundle install` to install dependencies. It should tell you at this point if you don't have an adequate Ruby version installed.
 5. Check basic sanity by running `bundle exec rake` to run tests and checks _before_ you make any changes.
 6. Make your changes and commit them to a feature branch. If you're picking a particular GitHub issue, please put `gh-##-topic` in the branch where `##` is the ticket number and `topic` is a few words about it.
