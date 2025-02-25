@@ -14,7 +14,7 @@ jobs:
           package-name: fillertext
           bump-minor-pre-major: true
           version-file: "lib/fillertext/version.rb"
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
       - name: Get all git tags
         run: git fetch --prune --unshallow --tags
