@@ -17,7 +17,7 @@ jobs:
           package-name: fillertext
           bump-minor-pre-major: true
           version-file: "lib/fillertext/version.rb"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: ${{ steps.release.outputs.release_created }}
         with:
           persist-credentials: false
