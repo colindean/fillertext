@@ -2,9 +2,10 @@
 
 module FillerText
   module Style
-    # Style: MikeLange
+    # Style: ScotsWordOfTheDay
     class ScotsWordOfTheDay
       # https://www.instagram.com/misspunnypennie/
+      # https://www.youtube.com/@misspunnypennie/shorts
       def self.text
         "Thon tumshie/baigie/neep gied him a fleg.
             Dinnae ye gang oot aifter the mirkenin.
@@ -16,7 +17,9 @@ module FillerText
             Dinnae loss the heid wae me!
             Thon lassie had muckle powstie.
             He's a bauld-dar laddie.
-            The wean's maw telt him, 'Yer tea's oot.'"
+            The wean's maw telt him, 'Yer tea's oot.'
+            A'm no havin children, A’m gonnae hae weans.
+            Thon yin's aye awfy pirlie."
       end
     end
   end
