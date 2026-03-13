@@ -5,18 +5,6 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.4.0](https://github.com/colindean/fillertext/compare/v0.3.5...v0.4.0) (2026-03-13)
-
-
-### Features
-
-* Add test for ScotsWordOfTheDay style ([9d8a397](https://github.com/colindean/fillertext/commit/9d8a39762ab970a71ec9b61a77a6a03830d19700))
-
-
-### Bug Fixes
-
-* Correct FillerText style assignment and add new style ([f26fac5](https://github.com/colindean/fillertext/commit/f26fac58f1a73aa929f380b2a6427f4c008946ae))
-
 ## [0.4.0](https://github.com/colindean/fillertext/compare/v0.3.5...v0.4.0) (2026-03-12)
 
 ### Features
