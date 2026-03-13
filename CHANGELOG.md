@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0](https://github.com/colindean/fillertext/compare/fillertext-v0.4.0...fillertext/v0.5.0) (2026-03-13)
+
+
+### Features
+
+* Add test for ScotsWordOfTheDay style ([9d8a397](https://github.com/colindean/fillertext/commit/9d8a39762ab970a71ec9b61a77a6a03830d19700))
+* Adds release instructions and tests an automated release ([2dd6c80](https://github.com/colindean/fillertext/commit/2dd6c80d83eac2b7c05e431a505fbb4a4b5da175))
+
+
+### Bug Fixes
+
+* Add release-please config ([4834d06](https://github.com/colindean/fillertext/commit/4834d06fa90f545609c391caab625809c3f5bf65))
+* Add release-please config and fix workflow ([127ac46](https://github.com/colindean/fillertext/commit/127ac4683e4453a914543307284416f7ce61066d))
+* Correct FillerText style assignment and add new style ([f26fac5](https://github.com/colindean/fillertext/commit/f26fac58f1a73aa929f380b2a6427f4c008946ae))
+* Downgrade manifest version from 0.4.1 to 0.4.0 ([eac7850](https://github.com/colindean/fillertext/commit/eac7850a5acb5bf04508f65cf123a58ed8a3985f))
+* Fixes URL to Ashvith's profile ([256f4d3](https://github.com/colindean/fillertext/commit/256f4d353f19a9cec08d9a6ac76e95d8129933c2))
+* Gemfile & Gemfile.lock to reduce vulnerabilities ([4f2c55b](https://github.com/colindean/fillertext/commit/4f2c55b29868d8e9ea174e53508d17167a36c3d7))
+* Gemfile & Gemfile.lock to reduce vulnerabilities ([1a6423a](https://github.com/colindean/fillertext/commit/1a6423acc5d3b1735f9228ea8a8de313c91d6df5))
+* Gemfile & Gemfile.lock to reduce vulnerabilities ([ba250c1](https://github.com/colindean/fillertext/commit/ba250c1515c0da44fecacbed2fd819495903c40c))
+* Gemfile & Gemfile.lock to reduce vulnerabilities ([eca9023](https://github.com/colindean/fillertext/commit/eca90233157d8757d789b17cbd063dd81d7df5bc))
+* Gemfile.lock & Gemfile to reduce vulnerabilities ([2023670](https://github.com/colindean/fillertext/commit/202367087e5f675a449ee32d6cdf3519747735f7))
+* Gemfile.lock & Gemfile to reduce vulnerabilities ([32fae27](https://github.com/colindean/fillertext/commit/32fae279425d27a10a37073efc1c9eef096217a6))
+* Gemfile.lock to reduce vulnerabilities ([cd6e830](https://github.com/colindean/fillertext/commit/cd6e8306a8edb6390a48da552c4ad54e9a7e970f))
+* Get all git tags during release process ([fc54124](https://github.com/colindean/fillertext/commit/fc54124f77e218a5ae4f383f4f101e5d1404bcdc))
+* Populate release-please manifest manually ([d47cc74](https://github.com/colindean/fillertext/commit/d47cc74d4704cd0bd9430ec72b6017db7d1c2781))
+* Satisfies Rubocop checks ([531ad51](https://github.com/colindean/fillertext/commit/531ad5191f40a23b28006db41cd66eda499c35c8))
+* Set git user/email in release workflow ([806b49a](https://github.com/colindean/fillertext/commit/806b49a46256688c7101cc621d188236deb9fc33))
+* Source gemspec version from version.rb ([fc791c5](https://github.com/colindean/fillertext/commit/fc791c5009ff4dc4ceb2f640687aff1bcfcb7007))
+* Update README.md, add instructions for: ([25c95fd](https://github.com/colindean/fillertext/commit/25c95fd61c269e8f4d926848b650554aa86377e4))
+* Update README.md, add instructions for: ([61e8e6f](https://github.com/colindean/fillertext/commit/61e8e6fa26f410badac701cdd3b064f29b0f222a))
+* Use config file in release-please-action ([daf626b](https://github.com/colindean/fillertext/commit/daf626b92b51eaa1521e9c93363e7b2bb6a8d087))
+
 ## [0.4.0](https://github.com/colindean/fillertext/compare/v0.3.5...v0.4.0) (2026-03-12)
 
 ### Features
