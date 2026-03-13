@@ -9,9 +9,9 @@ jobs:
         os: [ubuntu-latest, macos-latest]
         # Due to https://github.com/actions/runner/issues/849, we have to use quotes for '3.0'
         ruby:
+          - "4.0"
           - "3.4"
           - "3.3"
-          - "3.2"
           - head
           - jruby
           - jruby-head
