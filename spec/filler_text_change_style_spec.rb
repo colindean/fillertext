@@ -27,5 +27,11 @@ RSpec.describe FillerText do
       described_class.style = FillerText::Style::MikeLange
       expect(t.length.filler.characters).to eql t
     end
+
+    it "uses ScotsWordOfTheDay" do
+      t = "Thon tumshie/baigie/neep"
+      described_class.style = FillerText::Style::ScotsWordOfTheDay
+      expect(t.length.filler.characters).to eql t
+    end
   end
 end
