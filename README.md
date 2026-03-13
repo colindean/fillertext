@@ -61,7 +61,9 @@ FillerText::FillerText.style = FillerText::Style::HipsterIpsum
 # handmade just like grandma's pierogies
 FillerText::FillerText.style = FillerText::Style::YinzerIpsum
 # homage to the late, great Pittsburgh Penguins announcer
-FillerTest::FillerText.style = FillerText::Style::MikeLange
+FillerText::FillerText.style = FillerText::Style::MikeLange
+# homage to Len Pennie's Scots Word of the Day
+FillerText::FillerText.style = FillerText::Style::ScotsWordOfTheDay
 ```
 
 Contributing to FillerText
