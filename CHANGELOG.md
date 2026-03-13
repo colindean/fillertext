@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.1](https://github.com/colindean/fillertext/compare/v0.4.0...v0.4.1) (2026-03-13)
+
+
+### Bug Fixes
+
+* Add release-please config ([4834d06](https://github.com/colindean/fillertext/commit/4834d06fa90f545609c391caab625809c3f5bf65))
+* Add release-please config and fix workflow ([127ac46](https://github.com/colindean/fillertext/commit/127ac4683e4453a914543307284416f7ce61066d))
+* Downgrade manifest version from 0.4.1 to 0.4.0 ([eac7850](https://github.com/colindean/fillertext/commit/eac7850a5acb5bf04508f65cf123a58ed8a3985f))
+* Populate release-please manifest manually ([d47cc74](https://github.com/colindean/fillertext/commit/d47cc74d4704cd0bd9430ec72b6017db7d1c2781))
+* Set include-component-in-tag to avoid component-vtag ([64d64b6](https://github.com/colindean/fillertext/commit/64d64b6bc5af6ff823ea2886f4a90b0bb22010ae))
+* Use config file in release-please-action ([daf626b](https://github.com/colindean/fillertext/commit/daf626b92b51eaa1521e9c93363e7b2bb6a8d087))
+
 ## [0.4.0](https://github.com/colindean/fillertext/compare/v0.3.5...v0.4.0) (2026-03-12)
 
 ### Features
