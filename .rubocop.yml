@@ -6,6 +6,10 @@ AllCops:
   TargetRubyVersion: 3.3
   NewCops: enable
 
+Style/OneClassPerFile:
+  Enabled: true
+  AllowedClasses: ['Integer']
+
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
