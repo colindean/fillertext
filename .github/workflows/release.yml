@@ -23,7 +23,7 @@ jobs:
       - name: Get all git tags
         run: git fetch --prune --unshallow --tags
         if: ${{ steps.release.outputs.release_created }}
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1.310.0
         with:
           ruby-version: 3.4
         if: ${{ steps.release.outputs.release_created }}
