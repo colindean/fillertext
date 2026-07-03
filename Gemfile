@@ -15,7 +15,6 @@ gem "rubocop-rake"
 
 gem "rubocop-rspec"
 
-# TODO: allow rdoc >=8 when transitive dep 'rbs' supports jruby.
-gem "rdoc", "<8"
+gem "rdoc"
 
 gem "simplecov"
